@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import DarkModeToggle from './components/DarkModeToggle';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="navbar">
+        <nav>
+          <ul>
+            <li>
+              <Link to = "/">Clear</Link>
+            </li>
+            <li>
+              <Link to = "/DarkModeToggle">1. DarkModeToggle</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    <Switch>
+      <div className = "content">
+        <Route path = "/DarkModeToggle">
+          <DarkModeToggle/>
+        </Route>
+      </div>
+    </Switch>
+    </Router>
   );
 }
 
