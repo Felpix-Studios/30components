@@ -11,19 +11,23 @@ import { ThemeProvider } from "styled-components";
 import styled from "styled-components";
 import Navbar from './components/Navbar';
 import DarkModeToggle from './components/DarkModeToggle';
+import ProfileCard from './components/ProfileCard';
 
 const LightTheme = {
   pageBackground:"#fff",
   navBackground:"#06bcee",
   titleColor:"#1c1e21",
-  textColor:"#1a1a1a"
+  textColor:"#1a1a1a",
+  borderColor:"#222"
 };
+
 
 const DarkTheme = {
   pageBackground:"#222",
   navBackground:"#20232a",
   titleColor:"#06bcee",
-  textColor:"#fff"
+  textColor:"#fff",
+  borderColor:"#aaa"
 };
 
 const themes = {
@@ -52,6 +56,9 @@ function App() {
       <Container>
         <Route path = "/DarkModeToggle">
           <DarkModeToggle theme = {theme} setTheme = {setTheme}/>
+        </Route>
+        <Route path = "/ProfileCard">
+          <ProfileCard theme = {theme}/>
         </Route>
       </Container>
     </Switch>

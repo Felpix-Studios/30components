@@ -35,6 +35,9 @@ class Navbar extends React.Component{
                     <li>
                         <Link to = "/DarkModeToggle">1. DarkModeToggle</Link>
                     </li>
+                    <li>
+                        <Link to = "/ProfileCard">2. ProfileCard</Link>
+                    </li>
                 </ul>
             </Nav>
         </div>

@@ -16,7 +16,6 @@ const ToggleButton = styled.button`
     height: 50px;
     width: 50px; 
     text-align:center;
-    padding:6px; 
     border-radius: 50%;
     border: none;
     background-color: ${props => props.theme.titleColor};
@@ -31,8 +30,8 @@ class DarkModeToggle extends React.Component{
     constructor(props){
         super(props);
         console.log(this.props);
+
     }
-    
     render(){
         return (
             <div id="darkmodetoggle">

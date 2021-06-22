@@ -37,6 +37,16 @@ button:active{
   transform: scale(1.2);
 }
 button svg{
-  margin: 0;
-  padding:0;
+  display: inline-block;
+  vertical-align: middle;
+}
+#profilecard img{
+  border-radius: 50%;
+  float:left;
+  display: block;
+  margin: 0 auto;
+}
+#profilecard p{
+  margin: auto 0 auto 2rem;
+  text-align: left;
 }
